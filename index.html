@@ -15,6 +15,30 @@
 |_|_|_|___|___|__,|_| |___|_|
 </pre>
 
+
+<pre class="terminal" id="logo"></pre><span class="terminal cursor">_</span>
+
+<script>
+const text = `                   ___
+ _____ ___ ___ ___|  _|___ ___
+|     | . |_ -| .'|  _| -_|  _|
+|_|_|_|___|___|__,|_| |___|_|`;
+
+const logo = document.getElementById("logo");
+let i = 0;
+
+function type() {
+  if (i < text.length) {
+    logo.textContent += text[i];
+    i++;
+    setTimeout(type, 35);
+  }
+}
+
+type();
+</script>
+
+  
 <p>Independent ML/DL researcher | Network Engineer</p>
 
 <h2>Research interests</h2>
